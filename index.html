@@ -6,9 +6,10 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <div id="página1">
-            <h1>The Burn Book</h1>
-            <h3>Quieres compartir información súper confidencial con tu mejor amig@? Te entendemos y te ayudamos!!</h3> 
+        <img src="https://data.whicdn.com/images/269999558/large.png" alt="burn book logo" width="300px">
+        <div id="pagina1">
+            <!--<h1>The Burn Book</h1>-->
+            <h3>Quieres compartir información súper confidencial con tu mejor amig@? Lo sabemos y te ayudamos!!</h3> 
             <h3>Cifra y descifra mensajes privados con quien tú quieras, cuando tú quieras.</h3>
             <p>Elige a continuación si quieres Cifrar o Decifrar un mensaje.</p>
 
@@ -16,5 +17,28 @@
             <a href="#decifrar" onclick="decifrar()">DECIFRAR</a>
         </div>
 
+        <div id="pagina2">
+            <h2>CIFRA TU MENSAJE</h2>
+            <h3>Es hora de cifrar tu mensaje secreto, !MANOS A LA OBRA!</h3>
+
+            <textarea rows="5" cols="60" name="cifrar">Escribe tu mensaje aquí...</textarea>
+            <form>
+                <label for="number-example">Nivel de cifrado</label>
+                <input type="number" id="number-example" placeholder="Número" name="number-example" required/>
+            </form>
+            <button type="submit">CIFRAR</button>
+        </div>
+
+        <div id="pagina3">
+            <h2>DECIFRA TU MENSAJE</h2>
+            <h3>Quieres saber que mensaje te han compartido? !DECIFRALO! y recuerda...Es un Secreto!</h3>
+
+            <form>
+                <label for="number-example">Nivel de cifrado</label>
+                <input type="number" id="number-example" placeholder="Número" name="number-example" required/>
+            </form>
+            <button type="submit">DECIFRAR</button>      
+        </div>
+        <script src="app.js"></script>
     </body>
 </html>
