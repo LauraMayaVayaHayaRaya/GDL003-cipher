@@ -1,6 +1,9 @@
-body{
-    background-color: pink;
-}
 div{
     display:none;
   }
+body{
+    background-color: pink;   
+}
+img{
+    display:block; margin:auto;
+}

@@ -14,22 +14,24 @@ function decifrar(){
     document.getElementById('pagina4').style.display = 'none'; 
 }
 function resultadoCifrar(){
-    var ofset=document.getElementById('numberCifrar').value;
-    var string=document.getElementById('textoAcifrar').value;
-    var codificado = window.cipher.encode(ofset,string);
+    let ofset=parseInt(document.getElementById('numberCifrar').value);
+    let string=document.getElementById('textoAcifrar').value;
+    let encode=window.cipher.encode(ofset,string);//guarda el resultado que me da la funcion encode
     document.getElementById('pagina1').style.display = 'none';
     document.getElementById('pagina2').style.display = 'none';
     document.getElementById('pagina3').style.display = 'none';
     document.getElementById('pagina4').style.display = 'block';
+    document.getElementById('resultados').innerHTML=encode;
 
 }
 function resultadoDecifrar(){
-    var ofset=document.getElementById('numberDecifrar').value;
-    var string=document.getElementById('textoAdecifrar').value;
-    window.cipher.decode(ofset,string);
+    let ofset=document.getElementById('numberDecifrar').value;
+    let string=document.getElementById('textoAdecifrar').value;
+    let decode=window.cipher.decode(ofset,string);
     document.getElementById('pagina1').style.display = 'none';
     document.getElementById('pagina2').style.display = 'none';
     document.getElementById('pagina3').style.display = 'none';
     document.getElementById('pagina4').style.display = 'block';
+    document.getElementById('resultados').innerHTML=decode;
 
 }
