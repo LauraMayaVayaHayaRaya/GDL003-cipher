@@ -2,8 +2,43 @@ div{
     display:none;
   }
 body{
-    background-color: pink;   
+    background-color: pink;  
+    /*font-family: 'Thasadith', sans-serif;*/
+    /*font-family: 'Cormorant Garamond', serif;*/
+    /*font-family: 'Numans', sans-serif;*/
+    font-family: 'Pompiere', cursive;
+    text-align: center;
+    
 }
 img{
     display:block; margin:auto;
 }
+p{
+    font-size:30px;
+}
+h3{
+    font-size:35px;
+}
+label{
+    font-size:30px;
+}
+a,button{
+    padding: 10px;
+    border: 1px solid #7e686c;
+    width: 100px;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    font-family: 'Pompiere', cursive;
+}
+.cajaDeResultados{
+    width: 600px;
+    margin: 20px auto;
+    border: 1px solid white;
+    text-align: center;
+
+}
+
