@@ -16,8 +16,8 @@
             <h3>Cifra y descifra mensajes privados con quien tú quieras, cuando tú quieras.</h3>
             <p>Elige a continuación si quieres Cifrar o Decifrar un mensaje.</p>
 
-            <a href="#cifrar" onclick="cifrar()">CIFRAR</a>
-            <a href="#decifrar" onclick="decifrar()">DECIFRAR</a>
+            <a id="cifrar" href="#cifrar" >CIFRAR</a>
+            <a id="decifrar" href="#decifrar" >DECIFRAR</a>
         </div>
 
         <div id="pagina2">
@@ -27,7 +27,7 @@
                 <textarea id="textoAcifrar" rows="5" cols="60" name="cifrar"></textarea>
                 <label for="numberCifrar">Nivel de cifrado</label>
                 <input type="number" min="0" max="50" id="numberCifrar" placeholder="Número" name="number" required/>
-                <button type="button" value="cifrado" onclick="resultadoCifrar()">CIFRAR</button>
+                <button type="button" value="cifrado" id="botonResultadoCifrar">CIFRAR</button>
             </form>
             
         </div>
@@ -39,15 +39,15 @@
                 <textarea id="textoAdecifrar" rows="5" cols="60" name="cifrar"></textarea>
                 <label for="numberDecifrar">Nivel de cifrado</label>
                 <input type="number" min="0" max="50" id="numberDecifrar" placeholder="Número" name="number" required/>
-                <button type="button" value="decifrado" onclick="resultadoDecifrar()">DECIFRAR</button>
+                <button type="button" value="decifrado" id="botonResultadoDecifrar">DECIFRAR</button>
             </form>
                   
         </div>
 
         <div id="pagina4">
           <p id="resultados"></p>
-            <a href="#cifrar" onclick="cifrar()">CIFRAR</a>
-            <a href="#decifrar" onclick="decifrar()">DECIFRAR</a>
+            <a href="#cifrar" id="regresarAcifrar">CIFRAR</a>
+            <a href="#decifrar" id="regresarAdecifrar">DECIFRAR</a>
 
         </div>
     <script src="cipher.js"></script>
